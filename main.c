@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/* ES IMPORTANTE QUE EL ARCHIVO 
+ * DE LA MATRIZ NO TENGA CARACTERES 
+ * LUEGO DEL ULTIMO VALOR 
+ * PARA QUE n NO AUMENTE DE MAS
+ */
+
 int main() 
 {
     float valoresX[1024];
@@ -18,11 +24,13 @@ int main()
     while(!feof(valoresMatriz))
     {
         fscanf(valoresMatriz, "%f %f", &valoresX[i], &valoresY[i]);
+        printf("X = %f Y = %f\n",valoresX[i],valoresY[i]);
         i++;
         n++;
+        printf("%d\n",n);
+        
     }
-    n--;
-    
+        
     //calcula Xcuadrado promediado
     for (i = 0; i < n; i++)
     {
