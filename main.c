@@ -24,10 +24,10 @@ int main()
     while(!feof(valoresMatriz))
     {
         fscanf(valoresMatriz, "%f %f", &valoresX[i], &valoresY[i]);
-        printf("X = %f Y = %f\n",valoresX[i],valoresY[i]);
+        //printf("X = %f Y = %f\n",valoresX[i],valoresY[i]);
         i++;
         n++;
-        printf("%d\n",n);
+        //printf("%d\n",n);
         
     }
         
