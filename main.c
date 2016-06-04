@@ -6,6 +6,12 @@
  * PARA QUE n NO AUMENTE DE MAS
  */
 
+/* MATRIZ
+ * 
+ * |X² X| |A|   |XY|
+ * |X  1| |B| = | Y|
+ * 
+ */
 int main() 
 {
     float valoresX[1024];
